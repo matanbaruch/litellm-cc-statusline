@@ -2,8 +2,6 @@
 
 A Claude Code status line for LiteLLM that displays your username, spending, and budget information.
 
-![Status Line Example](https://img.shields.io/badge/matan.baruch-💰%24 22.9%2F%24100.00%20(22%25)-green)
-
 ## Output
 
 ```

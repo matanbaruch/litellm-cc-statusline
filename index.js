@@ -60,7 +60,7 @@ ${colors.bold}EXAMPLE${colors.reset}
   ${NAME}
 
 ${colors.bold}MORE INFO${colors.reset}
-  https://github.com/matan-anthropic/${NAME}
+  https://github.com/matanbaruch/${NAME}
 `);
 }
 

@@ -1,6 +1,6 @@
 {
   "name": "litellm-cc-statusline",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "LiteLLM status line for Claude Code - displays user budget and spending",
   "main": "index.js",
   "bin": {

@@ -1,0 +1,29 @@
+{
+  "name": "litellm-cc-statusline",
+  "version": "1.0.0",
+  "description": "LiteLLM status line for Claude Code - displays user budget and spending",
+  "main": "index.js",
+  "bin": {
+    "litellm-cc-statusline": "./index.js"
+  },
+  "scripts": {
+    "test": "echo '{\"model\":{\"display_name\":\"Opus\"},\"workspace\":{\"current_dir\":\"/test\"}}' | node index.js"
+  },
+  "keywords": [
+    "claude-code",
+    "statusline",
+    "litellm",
+    "anthropic",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR_USERNAME/litellm-cc-statusline.git"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
+

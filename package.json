@@ -6,9 +6,6 @@
   "bin": {
     "litellm-cc-statusline": "./index.js"
   },
-  "scripts": {
-    "test": "echo '{\"model\":{\"display_name\":\"Opus\"},\"workspace\":{\"current_dir\":\"/test\"}}' | node index.js"
-  },
   "keywords": [
     "claude-code",
     "statusline",

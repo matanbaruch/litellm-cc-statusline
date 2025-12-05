@@ -17,7 +17,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YOUR_USERNAME/litellm-cc-statusline.git"
+    "url": "git+https://github.com/matanbaruch/litellm-cc-statusline.git"
   },
   "engines": {
     "node": ">=14.0.0"

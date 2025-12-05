@@ -5,7 +5,7 @@ A Claude Code status line for LiteLLM that displays your username, spending, and
 ## Output
 
 ```
-matan.baruch | 💰$22.9/$100.00 (22%)
+user.name | 💰$22.9/$100.00 (22%)
 ```
 
 The status line changes color based on your budget usage:

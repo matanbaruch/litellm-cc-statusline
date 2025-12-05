@@ -68,27 +68,6 @@ function showVersion() {
   console.log(VERSION);
 }
 
-function findExecutablePath() {
-  // Try to find where this package is installed
-  const possiblePaths = [
-    // Global npm install
-    path.join(path.dirname(process.execPath), NAME),
-    // npx or local
-    process.argv[1],
-    // Fallback to just the command name (relies on PATH)
-    NAME,
-  ];
-
-  for (const p of possiblePaths) {
-    if (p && fs.existsSync(p)) {
-      return p;
-    }
-  }
-  
-  // Default to command name - will work if in PATH
-  return NAME;
-}
-
 function installStatusLine() {
   try {
     // Create .claude directory if it doesn't exist
@@ -109,12 +88,12 @@ function installStatusLine() {
       }
     }
 
-    const execPath = findExecutablePath();
+    const command = `npx ${NAME}`;
 
     // Add statusLine configuration
     settings.statusLine = {
       type: 'command',
-      command: execPath,
+      command: command,
       padding: 0,
     };
 
@@ -122,7 +101,7 @@ function installStatusLine() {
     fs.writeFileSync(CLAUDE_SETTINGS_FILE, JSON.stringify(settings, null, 2), 'utf8');
     
     console.log(`${colors.green}✓${colors.reset} Status line installed successfully!`);
-    console.log(`${colors.dim}  Command: ${execPath}${colors.reset}`);
+    console.log(`${colors.dim}  Command: ${command}${colors.reset}`);
     console.log(`${colors.dim}  Settings: ${CLAUDE_SETTINGS_FILE}${colors.reset}`);
     console.log(`\n${colors.bold}Next steps:${colors.reset}`);
     console.log(`  1. Make sure ANTHROPIC_BASE_URL and ANTHROPIC_AUTH_TOKEN are set`);
